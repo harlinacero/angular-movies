@@ -2,15 +2,20 @@
   <form>
     <div class="form__row">
       <label class="form__label" for="username">Username:</label>
-      <input class=form_input type="text" id="username">
+      <input class=form_input type="text" id="username" [(ngModel)]="username">
     </div>
     <div class="form__row">
       <label class="form__label" for="email">Email:</label>
-      <input class=form_input type="text" id="email">
+      <input class=form_input type="text" id="email" [(ngModel)]="email">
     </div>
     <div class="form__row">
       <label class="form__label" for="password">Password:</label>
-      <input class=form_input type="password" id="password">
+      <input class=form_input type="password" id="password" [(ngModel)]="password">
+    </div>
+    <div class="form__row">
+      
+      <button type="submit" (click)="Singup()">Crear cuenta</button>
+      
     </div>
   </form>
 </div>
